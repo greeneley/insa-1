@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="tests/" tests="14" assertions="11" errors="5" failures="1" skipped="0" time="0.004112">
+    <testsuite name="EmailTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/EmailTest.php" tests="3" assertions="1" errors="2" failures="1" skipped="0" time="0.003143">
+      <testcase name="testCanBeCreatedFromValidEmailAddress" class="EmailTest" classname="EmailTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/EmailTest.php" line="8" assertions="0" time="0.002726">
+        <error type="Error">EmailTest::testCanBeCreatedFromValidEmailAddress
+Error: Class 'Email' not found
+
+/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/EmailTest.php:12
+</error>
+      </testcase>
+      <testcase name="testCannotBeCreatedFromInvalidEmailAddress" class="EmailTest" classname="EmailTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/EmailTest.php" line="16" assertions="1" time="0.000371">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">EmailTest::testCannotBeCreatedFromInvalidEmailAddress
+Failed asserting that exception of type "Error" matches expected exception "InvalidArgumentException". Message was: "Class 'Email' not found" at
+/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/EmailTest.php:20
+.
+
+</failure>
+      </testcase>
+      <testcase name="testCanBeUsedAsString" class="EmailTest" classname="EmailTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/EmailTest.php" line="23" assertions="0" time="0.000046">
+        <error type="Error">EmailTest::testCanBeUsedAsString
+Error: Class 'Email' not found
+
+/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/EmailTest.php:27
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="PoneysNewTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysNewTest.php" tests="4" assertions="3" errors="1" failures="0" skipped="0" time="0.000512">
+      <testsuite name="PoneysNewTest::testAddPoneyFromField" tests="4" assertions="3" errors="1" failures="0" skipped="0" time="0.000512">
+        <testcase name="testAddPoneyFromField with data set #0" class="PoneysNewTest" classname="PoneysNewTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysNewTest.php" line="25" assertions="1" time="0.000222"/>
+        <testcase name="testAddPoneyFromField with data set #1" class="PoneysNewTest" classname="PoneysNewTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysNewTest.php" line="25" assertions="1" time="0.000071"/>
+        <testcase name="testAddPoneyFromField with data set #2" class="PoneysNewTest" classname="PoneysNewTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysNewTest.php" line="25" assertions="1" time="0.000108"/>
+        <testcase name="testAddPoneyFromField with data set #3" class="PoneysNewTest" classname="PoneysNewTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysNewTest.php" line="25" assertions="0" time="0.000111">
+          <error type="InvalidArgumentException">PoneysNewTest::testAddPoneyFromField with data set #3 (9, 16)
+InvalidArgumentException: un champ ne peut contenir que 15 poneys
+
+/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/src/Poneys.php:53
+/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysNewTest.php:26
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="PoneysTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysTest.php" tests="7" assertions="7" errors="2" failures="0" skipped="0" time="0.000457">
+      <testsuite name="PoneysTest::testRemovePoneyFromField" tests="3" assertions="4" errors="1" failures="0" skipped="0" time="0.000329">
+        <testcase name="testRemovePoneyFromField with data set #0" class="PoneysTest" classname="PoneysTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysTest.php" line="37" assertions="2" time="0.000226"/>
+        <testcase name="testRemovePoneyFromField with data set #1" class="PoneysTest" classname="PoneysTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysTest.php" line="37" assertions="2" time="0.000040"/>
+        <testcase name="testRemovePoneyFromField with data set #2" class="PoneysTest" classname="PoneysTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysTest.php" line="37" assertions="0" time="0.000063">
+          <error type="InvalidArgumentException">PoneysTest::testRemovePoneyFromField with data set #2 (10, 3)
+InvalidArgumentException: total &lt; 0, Trop de poneys retirer
+
+/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/src/Poneys.php:29
+/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysTest.php:42
+</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="PoneysTest::testAddPoneyFromField" tests="4" assertions="3" errors="1" failures="0" skipped="0" time="0.000128">
+        <testcase name="testAddPoneyFromField with data set #0" class="PoneysTest" classname="PoneysTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysTest.php" line="55" assertions="1" time="0.000027"/>
+        <testcase name="testAddPoneyFromField with data set #1" class="PoneysTest" classname="PoneysTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysTest.php" line="55" assertions="1" time="0.000028"/>
+        <testcase name="testAddPoneyFromField with data set #2" class="PoneysTest" classname="PoneysTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysTest.php" line="55" assertions="1" time="0.000026"/>
+        <testcase name="testAddPoneyFromField with data set #3" class="PoneysTest" classname="PoneysTest" file="/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysTest.php" line="55" assertions="0" time="0.000047">
+          <error type="InvalidArgumentException">PoneysTest::testAddPoneyFromField with data set #3 (9, 16)
+InvalidArgumentException: un champ ne peut contenir que 15 poneys
+
+/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/src/Poneys.php:53
+/home/haipro/Documents/5A_ASL/testinglociciels/insa-1/poneys/tests/PoneysTest.php:56
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

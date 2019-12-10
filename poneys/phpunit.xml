@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="Test Poneys">
+            <directory>./tests/</directory>
+        </testsuite>  
+    </testsuites>  
+    <php>
+          <includePath>.</includePath>
+          <const name="count" value='8'/>
+          <const name="capacity" value='15'/>
+    </php>
+    <logging>
+          <log type="junit" target="./report.xml"/>
+    </logging>
+</phpunit>

@@ -4,8 +4,8 @@
  */
 class Poneys
 {
-    private $count = 8;
-
+    private $count = 0;
+    private $capacity = capacity;
     /**
      * Retourne le nombre de poneys
      *
@@ -25,7 +25,13 @@ class Poneys
      */
     public function removePoneyFromField(int $number): void
     {
-        $this->count -= $number;
+        if($this->count < $number){
+            throw new InvalidArgumentException("total < 0, Trop de poneys retirer");
+        }
+        if($number < 0){
+            throw new InvalidArgumentException("number < 0, impossible");
+        }
+        $this->count -= $number;   
     }
 
     /**
@@ -35,7 +41,26 @@ class Poneys
      */
     public function getNames(): array
     {
+        //
+    }
 
+    public function addPoneysFromField(int $number): void
+    {   
+        if($number < 0){
+            throw new InvalidArgumentException("number < 0, impossible");
+        }
+        if($this->count + $number > $this->capacity){
+            throw new InvalidArgumentException("un champ ne peut contenir que ".$this->capacity." poneys");
+        }
+        $this->count += $number;
+    }
+
+    /**
+     * Creer la method setUp()
+     */
+    public function setCount(int $number){
+        $this->count = $number;
     }
 }
+
 ?>
